@@ -17,6 +17,9 @@ li{
 a{
 	list-style: none;
 }
+:required{
+	border: solid 2px darksalmon;
+}
 .center{
 	text-align: center;
 	color: white;
