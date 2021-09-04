@@ -1,0 +1,261 @@
+header{
+  background: linear-gradient(-255deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%),url("images/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  color: white;
+  display: table;
+  width:100%;
+  text-align: center;
+}
+header nav {
+  position: fixed;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+.navbar-toggler {
+  border: none;
+}
+header .container-fluid {
+  padding-bottom: 0.75rem;
+}
+.nav-item {
+  margin-right: 3rem;
+}
+.nav-link {
+  color: white !important;
+  transition: 500ms;
+}
+.nav-link:hover {
+  color: #f0c400 !important;
+}
+.fa-bars {
+  font-size: 2rem;
+  color: white;
+  margin-right: 1rem;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  text-align: center;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+}
+header h1{
+  margin: 1rem;
+  font-size: 5rem;
+  display: table-row;
+}
+header h2{
+  font-size: 2.5rem;
+}
+.container li{
+  font-size: 3rem;
+  font-weight: bolder;
+  list-style: none;
+  padding: 2rem;
+}
+#btn{
+  background-color: #3C3950;
+  color: white;
+  margin: 2rem auto; 
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius:5%;
+}
+#btn:hover{
+  background-color: rgba(60, 57, 80, 0.99);
+  box-shadow: 8px 8px 2px 1px ;
+  color: #f0c400;
+  font-size: 3rem;
+}
+.container{
+  width: 90%;
+  margin:3rem auto;
+}
+.container p{
+    display: block;
+    margin: 6rem auto;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.space{
+  margin-top: 10%;
+}
+.container h1{
+  text-transform: uppercase;
+  font-family: "Montserrat", serif;
+  text-align: center;
+  margin: 4%;
+  letter-spacing: 0.1rem;
+  font-size: 5rem;
+}
+.avatar{
+  width: 30%;
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: 10px 10px 30px rgb(0 0 0 / 30%);
+}
+.inline{
+  display: block;
+  padding: 4rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 4rem;
+}
+.img-center{
+  padding: 2rem;
+}
+.img-right{
+  margin: 2rem auto;
+  padding-left: 5rem;
+  width: 50%;
+  float: right;
+}
+.img-full{
+  margin-top: 3rem;
+  width: 100%;
+}
+@media (max-width: 800px){
+  .intro{
+    width: 90%;
+  }
+  .container{
+    width: 100%;
+  }
+  .img-right{
+  float: none;
+  width: 100%;
+  padding: 0px;
+  }
+  .avatar{
+  width: 50%;
+  }
+}
+@media (max-width: 500px){
+   .intro{
+    width: 90%;
+  }
+  .container{
+    width: 60%;
+  }
+    .img-right{
+  float: none;
+  width: 100%;
+  padding: 0px;
+  }
+  .avatar{
+  width: 100%;
+  padding: 0.5rem;
+  }
+}
+/* Footer */
+footer {
+  background-color: #181828;
+  position: relative;
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .aui-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .aui-img img {
+  height: 10rem;
+  width: auto;
+}
+footer .contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  transition: 1s;
+}
+footer .contact-us ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+footer .contact-us ul li a {
+  color: #fff;
+  font-size: 2.5rem;
+  margin: auto 2.5rem;
+  transition: 1s;
+}
+footer .contact-us ul li:nth-child(1) a:hover {
+  color: #4267b2;
+  font-size: 3.5rem;
+}
+footer .contact-us ul li:nth-child(2) a:hover {
+  color: #c13584;
+  font-size: 3.5rem;
+}
+footer .contact-us ul li:nth-child(3) a:hover {
+  color: #0077b5;
+  font-size: 3.5rem;
+}
+footer .links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+footer .links li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: auto 2rem;
+  color: #99a9b5;
+  transition: 1s;
+}
+footer .links li:nth-child(2) {
+  border-style: solid;
+  padding: 0 2rem;
+  border-width: 0 0.1rem;
+  border-color: #99a9b5;
+}
+footer .links li a:hover {
+  color: rgb(0, 128, 0);
+}
+footer p {
+  color: white;
+  margin: auto 2rem;
+}
+footer p .me {
+  text-decoration: none;
+  color: #fff;
+  transition: 1s;
+}
+footer p .me:hover {
+  color: #181828;
+}
+footer .div-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  flex-wrap: wrap;
+}
+footer .copyrights {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
