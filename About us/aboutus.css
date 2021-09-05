@@ -1,5 +1,5 @@
 header{
-  background: linear-gradient(-255deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%),url("images/background.jpg") no-repeat;
+  background: linear-gradient(-255deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%),url("images/background2.JPG") no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 70vh;
@@ -54,11 +54,23 @@ header h1{
 header h2{
   font-size: 2.5rem;
 }
-.container li{
-  font-size: 3rem;
-  font-weight: bolder;
+.inline li{
+  float:left;
+  width: 30%;
+  margin-right: 2.3rem;
+}
+
+.inline li .image{
+  display:block;
+  width: 80%;
+  margin-left:4rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.inline, .inline p, .inline h3{
   list-style: none;
-  padding: 2rem;
+  margin:0; 
+  padding:0;
 }
 #btn{
   background-color: #3C3950;
@@ -99,20 +111,10 @@ header h2{
   font-size: 5rem;
 }
 .avatar{
-  width: 30%;
   border-radius: 50%;
-  padding: 1rem;
-  box-shadow: 10px 10px 30px rgb(0 0 0 / 30%);
+  box-shadow: 1rem 1rem 3rem rgb(0 0 0 / 30%);
 }
-.inline{
-  display: block;
-  padding: 4rem;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 4rem;
-}
+
 .img-center{
   padding: 2rem;
 }
@@ -127,6 +129,10 @@ header h2{
   width: 100%;
 }
 @media (max-width: 800px){
+  .inline li{
+    display: flex;
+    width: 100%;
+  }
   .intro{
     width: 90%;
   }
@@ -140,6 +146,7 @@ header h2{
   }
   .avatar{
   width: 50%;
+  padding: 0.5rem;
   }
 }
 @media (max-width: 500px){
